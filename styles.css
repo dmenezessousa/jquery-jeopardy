@@ -1,0 +1,72 @@
+body {
+/* background-color: #252525; */
+background-image: url(jeopardy-background.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+}
+
+#app-title {
+text-align: center;
+margin-bottom: 48px;
+font-size: 30px;
+}
+
+#board-grid {
+display: grid;
+grid-template-columns: 240px 240px 240px 240px 240px;
+grid-gap: 2px;
+justify-content: center;
+}
+
+#board-grid:hover{
+    cursor: pointer;
+}
+
+.board-box {
+background-color: blue;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+}
+
+#question-answer-display {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 48px;
+font-weight: bold;
+font-size: 30px;
+}
+#score-div{
+    font-weight: bold;
+    font-size: 30px;
+}
+#answer-div {
+display: flex;
+justify-content: center;
+margin-top: 48px;
+font-weight: bold;
+font-size: 80px;
+}
+
+.answer {
+margin-left: 8px;
+height: 30px;
+font-weight: bold;
+font-size: 15px;
+}
+#submit{
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    height: 35px;
+}
+#reset{
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    height: 35px;
+}
