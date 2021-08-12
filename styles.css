@@ -1,15 +1,29 @@
 body {
-/* background-color: #252525; */
+background-color: #252525;
 background-image: url(jeopardy-background.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-color: white;
+color: #fff;
+margin: 0;
+padding: 0;
 }
 
 #app-title {
 text-align: center;
 margin-bottom: 48px;
 font-size: 30px;
+}
+
+#question-grid {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    grid-gap: 2px;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+#question-grid:hover{
+    cursor: pointer;
 }
 
 #board-grid {
@@ -19,17 +33,21 @@ grid-gap: 2px;
 justify-content: center;
 }
 
+
 #board-grid:hover{
     cursor: pointer;
 }
 
 .board-box {
-background-color: blue;
+background-color: #00004d;
 height: 80px;
 display: flex;
 align-items: center;
 justify-content: center;
 font-weight: bold;
+}
+.board-box:hover{
+    background-color: gray;
 }
 
 #question-answer-display {
@@ -56,17 +74,28 @@ font-size: 80px;
 margin-left: 8px;
 height: 30px;
 font-weight: bold;
-font-size: 15px;
+font-size: 25px;
 }
 #submit{
-    background-color: blue;
+    background-color: #00004d;
     color: #fff;
     border-radius: 5px;
     height: 35px;
 }
+
 #reset{
-    background-color: blue;
+    background-color: #00004d;
     color: #fff;
     border-radius: 5px;
     height: 35px;
 }
+#submit:hover{
+    cursor: pointer;
+}
+#reset:hover{
+    cursor: pointer;
+}
+
+/* @media only screen and (min-width: 1400px){
+    
+} */
